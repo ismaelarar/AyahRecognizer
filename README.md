@@ -20,6 +20,7 @@ import AyahRecognizer
 
 Y pásale el texto como parámetro a la función `recognize_ayaat`:
 
+---
 ### Ejemplo texto en árabe
 
 ```python
@@ -34,7 +35,7 @@ for match in response:
     67:1 | تبارك الذي بيده الملك وهو على كل شيء قدير
     47:1 | الذين كفروا وصدوا عن سبيل الله اضل اعمالهم
     93:1-2 | والضحى والليل اذا سجى
-
+---
 ### Ejemplo texto transliterado
 
 ```python
@@ -48,7 +49,7 @@ for match in response:
 
     2:255 | allahu la ilaha illah huwa al hayul qayum  
     109:1-2 | ya ayuha al kafirun la abudu ma ta budun
-
+---
 ### Ejemplo texto en español
 
 ```python
