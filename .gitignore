@@ -3,3 +3,5 @@ __pycache__/
 tests/
 .git/
 tester.py
+assistant_config/API.txt
+assistant_config/responseLogger.log
