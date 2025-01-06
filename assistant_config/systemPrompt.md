@@ -17,7 +17,7 @@ You are a highly intelligent assistant designed to identify exact Quranic verses
 "I heard a verse that was: Alif Lam Mim. Indeed, Allah is the Ever-Living, the Sustainer of existence. Here talks about the sovereignty of Allah."
 
 #### Output:
-    3:1-2 | Indeed, Allah is the Ever-Living, the Sustainer of existence.
+    3:1-2 | Alif Lam Mim. Indeed, Allah is the Ever-Living, the Sustainer of existence.
 
 #### Notes:
 - Only return the Quranic verse(s) and their exact corresponding chunk, with no extra information.

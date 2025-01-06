@@ -1,1 +1,1 @@
-OpenAI
+openai==1.55.3

@@ -15,7 +15,12 @@ python -m pip install -r requirements.txt
 
 En tu script de python añade el import:
 ```python
-import AyahRecognizer
+from AyahRecognizer import AyahRecognizer
+```
+
+E inicializa el objeto:
+```python
+ayah_recognizer = AyahRecognizer()
 ```
 
 Y pásale el texto como parámetro a la función `recognize_ayaat`:
@@ -24,7 +29,7 @@ Y pásale el texto como parámetro a la función `recognize_ayaat`:
 ### Ejemplo texto en árabe
 
 ```python
-response = AyahRecognizer.recognize_ayaat("انا احبك كثيرا الايه الله قال تبارك الذي بيده الملك وهو على كل شيء قدير ودني الايه الله قال الذين كفروا وصدوا عن سبيل الله اضل اعمالهم وثاني والضحى والليل اذا سجى انا احبهن كثيرا")
+response = ayah_recognizer.recognize_ayaat("انا احبك كثيرا الايه الله قال تبارك الذي بيده الملك وهو على كل شيء قدير ودني الايه الله قال الذين كفروا وصدوا عن سبيل الله اضل اعمالهم وثاني والضحى والليل اذا سجى انا احبهن كثيرا")
 if (response != None):
 for match in response:
     print(match)
@@ -39,7 +44,7 @@ for match in response:
 ### Ejemplo texto transliterado
 
 ```python
-response = AyahRecognizer.recognize_ayaat("Hermano, el otro dia iba caminando y escuche: allahu la ilaha illah huwa al hayul qayum, sabes que versiculo es?? tambien ya ayuha al kafirun la abudu ma ta budun. Me gustaron mucho.")
+response = ayah_recognizer.recognize_ayaat("Hermano, el otro dia iba caminando y escuche: allahu la ilaha illah huwa al hayul qayum, sabes que versiculo es?? tambien ya ayuha al kafirun la abudu ma ta budun. Me gustaron mucho.")
 if (response != None):
 for match in response:
     print(match)
@@ -53,7 +58,7 @@ for match in response:
 ### Ejemplo texto en español
 
 ```python
-response = AyahRecognizer.recognize_ayaat("Dice que luego vuelve la vista por segunda vez y tu mirada volverá a ti cansada y derrotada. Este versiculo me gusta mucho")
+response = ayah_recognizer.recognize_ayaat("Dice que luego vuelve la vista por segunda vez y tu mirada volverá a ti cansada y derrotada. Este versiculo me gusta mucho")
 if (response != None):
 for match in response:
     print(match)
